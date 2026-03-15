@@ -14,7 +14,7 @@ export default function About() {
     <section id="about" className="py-20 lg:py-32 bg-secondary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Image */}
+          {/* Video */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -23,9 +23,12 @@ export default function About() {
             className="relative"
           >
             <div className="relative overflow-hidden">
-              <img
-                src="/assets/generated/about-factory.dim_700x500.jpg"
-                alt="EFSAN Factory"
+              <video
+                src="/assets/efsan-video-new (1).mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
                 className="w-full h-96 lg:h-[500px] object-cover"
               />
               {/* Decorative frame */}

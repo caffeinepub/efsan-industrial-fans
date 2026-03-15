@@ -13,15 +13,13 @@ export default function Hero({ onNavigate }: HeroProps) {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            "url('/assets/generated/hero-fans.dim_1400x700.jpg')",
-        }}
+      {/* Background Image */}
+      <img
+        src="/assets/generated/hero-fans.dim_1400x700.jpg"
+        alt="Industrial fans hero"
+        className="absolute inset-0 w-full h-full object-cover"
       />
-      {/* Dark overlay — strong enough to keep text readable on white bg */}
+      {/* Dark overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/50 to-black/80" />
       {/* Subtle grain texture */}
       <div
