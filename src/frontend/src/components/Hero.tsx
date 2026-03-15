@@ -13,12 +13,16 @@ export default function Hero({ onNavigate }: HeroProps) {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image */}
-      <img
-        src="/assets/generated/hero-fans.dim_1400x700.jpg"
-        alt="Industrial fans hero"
+      {/* Background Video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
         className="absolute inset-0 w-full h-full object-cover"
-      />
+      >
+        <source src="/assets/efsan-video-new (1).mp4" type="video/mp4" />
+      </video>
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/65 via-black/50 to-black/80" />
       {/* Subtle grain texture */}
